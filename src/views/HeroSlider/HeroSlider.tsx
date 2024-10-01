@@ -11,7 +11,7 @@ const HeroSlider = () => {
   return (
     <div className="hero-slider" >
       <Carousel >
-        <Carousel.Item style={{marginTop:'78px'}}>
+        <Carousel.Item style={{marginTop:'76px'}}>
           <img className="d-block w-100" src={HeroImage} alt="First slide" />
           <Carousel.Caption className="custom-caption-left">
             {/* <h3>
@@ -35,7 +35,7 @@ const HeroSlider = () => {
           </Carousel.Caption>
         </Carousel.Item>
 
-        <Carousel.Item>
+        <Carousel.Item style={{marginTop:'76px'}}>
           <img className="d-block w-100" src={HeroImage1} alt="Second slide" />
           <Carousel.Caption className="custom-caption-left">
             {/* <h3>
@@ -59,7 +59,7 @@ const HeroSlider = () => {
           </Carousel.Caption>
         </Carousel.Item>
 
-        <Carousel.Item>
+        <Carousel.Item style={{marginTop:'76px'}}>
           <img className="d-block w-100" src={HeroImage3} alt="Third slide" />
           <Carousel.Caption className="custom-caption-left">
             {/* <h3>
