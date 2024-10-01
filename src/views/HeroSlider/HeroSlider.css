@@ -1,0 +1,33 @@
+
+  /* HeroSlider.css */
+.hero-slider {
+  max-width: 100%;
+  height: auto;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 100vh; /* Full height on larger screens */
+}
+
+.custom-caption-left {
+  position: absolute;
+  /* bottom: 10px; */
+  /* left: 10px; */
+  text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 70vh; /* Adjust height for tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-item img {
+    height: 50vh; /* Adjust height for mobile screens */
+  }
+}
+
+
