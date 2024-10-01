@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/cab-booking/static/css/main.4206c5be.css",
+    "main.js": "/cab-booking/static/js/main.441eb5ae.js",
+    "static/js/453.ddc7507e.chunk.js": "/cab-booking/static/js/453.ddc7507e.chunk.js",
+    "static/media/city tour.jpg": "/cab-booking/static/media/city tour.d3a149d992d08381d916.jpg",
+    "static/media/airport tour.jpg": "/cab-booking/static/media/airport tour.291ad3e63f6b5eae6a88.jpg",
+    "static/media/hero.jpg": "/cab-booking/static/media/hero.49e038958c1b627a7a9d.jpg",
+    "static/media/outstation.jpg": "/cab-booking/static/media/outstation.2f11d0f08be576f53816.jpg",
+    "static/media/herocab2.jpg": "/cab-booking/static/media/herocab2.83401be1d0e040e2a853.jpg",
+    "static/media/HeroImage.jpg": "/cab-booking/static/media/HeroImage.85578577eaa0971eef4a.jpg",
+    "static/media/QR payment.jpg": "/cab-booking/static/media/QR payment.807aa471e7da42fd5fd7.jpg",
+    "static/media/istockphoto-1086341762-612x612.jpg": "/cab-booking/static/media/istockphoto-1086341762-612x612.141d71475747c3f86b5d.jpg",
+    "static/media/navlogo.png": "/cab-booking/static/media/navlogo.49a6e2996acfddab297b.png",
+    "index.html": "/cab-booking/index.html",
+    "main.4206c5be.css.map": "/cab-booking/static/css/main.4206c5be.css.map",
+    "main.441eb5ae.js.map": "/cab-booking/static/js/main.441eb5ae.js.map",
+    "453.ddc7507e.chunk.js.map": "/cab-booking/static/js/453.ddc7507e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4206c5be.css",
+    "static/js/main.441eb5ae.js"
+  ]
+}
