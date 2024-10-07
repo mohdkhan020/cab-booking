@@ -4,14 +4,14 @@ import HeroImage from "../../assets/hero.jpg";
 import HeroImage1 from "../../assets/herocab2.jpg";
 import HeroImage3 from "../../assets/HeroImage.jpg";
 import CabDetails from "../CabDetails/CabDetails";
-import SignUp from "../SignUpForm/SignUp";
+import SignUp from "../BookingForm/BookingForm";
 import { NavLink } from "react-router-dom";
 
 const HeroSlider = () => {
   return (
     <div className="hero-slider" >
       <Carousel >
-        <Carousel.Item style={{marginTop:'76px'}}>
+      <Carousel.Item  className="heroImageMargin">
           <img className="d-block w-100" src={HeroImage} alt="First slide" />
           <Carousel.Caption className="custom-caption-left">
             {/* <h3>
@@ -35,7 +35,7 @@ const HeroSlider = () => {
           </Carousel.Caption>
         </Carousel.Item>
 
-        <Carousel.Item style={{marginTop:'76px'}}>
+        <Carousel.Item  className="heroImageMargin">
           <img className="d-block w-100" src={HeroImage1} alt="Second slide" />
           <Carousel.Caption className="custom-caption-left">
             {/* <h3>
@@ -59,7 +59,7 @@ const HeroSlider = () => {
           </Carousel.Caption>
         </Carousel.Item>
 
-        <Carousel.Item style={{marginTop:'76px'}}>
+        <Carousel.Item  className="heroImageMargin">
           <img className="d-block w-100" src={HeroImage3} alt="Third slide" />
           <Carousel.Caption className="custom-caption-left">
             {/* <h3>

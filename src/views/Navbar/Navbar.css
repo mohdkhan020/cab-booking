@@ -1,0 +1,71 @@
+
+
+  
+/* Default link styling */
+.nav-link {
+    color: white; /* Inactive links have white text */
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent; /* No underline when inactive */
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+  }
+  
+  /* Active link styling for all links */
+  .active-link {
+    border-bottom: 2px solid #ffb606; /* #ffb606 underline when active */
+  }
+  
+  /* Home link will always have #ffb606 text color */
+  .home-active {
+    color: #ffb606;
+  }
+  
+  /* Other links will stay white but still get the underline on active */
+  .active-link:not(.home-active) {
+    color: white; /* Keeps the text color white for other active links */
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: inherit !important; /* This will ensure the color is taken from your custom styles */
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cabLogo {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  
+  /* For small devices like mobile phones */
+  @media (max-width: 576px) {
+    .cabLogo {
+      height: 40px; /* Adjust logo size for mobile */
+    }
+  }
+  
+  /* For medium devices like tablets */
+  @media (min-width: 577px) and (max-width: 991px) {
+    .cabLogo {
+      height: 50px; /* Adjust logo size for tablets */
+    }
+  }
+  
+  /* For large devices like laptops and desktops */
+  @media (min-width: 992px) {
+    .cabLogo {
+      height: 60px; /* Adjust logo size for laptops/desktops */
+    }
+  }
+  

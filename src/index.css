@@ -6,21 +6,23 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Quicksand", sans-serif;
+  overflow-x: hidden;
   /* font-size: 62.5%; */
   /* font-size: 10px; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
  h2, h3, h4 {
   font-family: 'Poppins', sans-serif;
   font-weight: 700; /* For bold headings */
-  color: #f1eded; /* Adjust this to fit your design */
+  color: #6c757d; /* Adjust this to fit your design */
 }
 h1{
   font-family: 'Poppins', sans-serif;
   font-weight: 700; /* For bold headings */
-  color: #f5ecec; /* Adjust this to fit your design */
+  color: #6c757d; /* Adjust this to fit your design */
 }
 
 p, li, span {
@@ -28,6 +30,20 @@ p, li, span {
   font-weight: 400; /* For body text */
   color: #ece3e3; /* Adjust for readability */
 }
+@media (max-width: 768px) {    
+  .h5{
+    font-size: 0rem !important;
+    color: #218838;
+  }
+}
+
+@media (max-width: 576px) {
+  .h5{
+    font-size: 0rem !important;
+    color: #218838;
+  }
+}
+
 
 /* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",

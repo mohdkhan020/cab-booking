@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./views/Navbar/Navbar";
 import HeroSlider from "./views/HeroSlider/HeroSlider";
 import Footer from "./views/Footer/Footer";
-import SignUp from "./views/SignUpForm/SignUp";
+import SignUp from "./views/BookingForm/BookingForm";
 import CabDetails from "./views/CabDetails/CabDetails";
 import "./index.css";
 import ContactUs from "./views/ContactUs/Contactus";
@@ -18,8 +18,7 @@ const App = () => {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<HeroSlider />} />
-          <Route path="/cab-details" element={<CabDetails />} />
+          <Route path="/cab-booking" element={<HeroSlider />} />
           <Route path="/sign-up" element={<SignUp />} />
           <Route path="/tour" element={<Tour />} />
           <Route path="/about-us" element={<AboutUs />} />

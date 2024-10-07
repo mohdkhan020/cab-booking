@@ -1,160 +1,235 @@
-// import Navlogo from "../../assets/navLOgo.png";
+
+import { useEffect } from "react";
+import { NavLink, Outlet, useLocation } from "react-router-dom";
+import Navlogo1 from "../../assets/navlogo.png";
+import './Navbar.css'
+
+const Navbar = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    const navbarToggler = document.querySelector('.navbar-collapse');
+    if (navbarToggler && navbarToggler.classList.contains('show')) {
+      navbarToggler.classList.remove('show');
+    }
+    window.scrollTo(0, 0);
+  }, [location]);
+
+  return (
+    <>
+      <div>
+        <nav
+          className="navbar navbar-expand-lg navbar-light"
+          style={{
+            backgroundColor: "#183650",
+            position: "fixed",
+            width: "100%",
+            zIndex: "999",
+          }}
+        >
+          <div className="container-fluid">
+            <a className="navbar-brand" href="#">
+              <img
+                className="cabLogo"
+                src={Navlogo1}
+                alt="Logo"
+              />
+            </a>
+
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span
+                className="navbar-toggler-icon"
+                style={{
+                  backgroundColor: "white",
+                  border: "9px solid white",
+                  borderRadius: "8px",
+                  padding: "12px",
+                }}
+              ></span>
+            </button>
+
+            <div className="collapse navbar-collapse" id="navbarNav">
+              <ul className="navbar-nav ms-auto">
+                {/* Home link with #ffb606 text and underline */}
+                <li className="nav-item">
+                  <NavLink
+                    to="/cab-booking"
+                    className={({ isActive }) =>
+                      isActive ? 'nav-link active-link home-active' : 'nav-link home-active'
+                    }
+                  >
+                    Home
+                  </NavLink>
+                </li>
+                {/* Other links with white text but #ffb606 underline when active */}
+                <li className="nav-item">
+                  <NavLink
+                    to="/about-us"
+                    className={({ isActive }) =>
+                      isActive ? 'nav-link active-link' : 'nav-link'
+                    }
+                  >
+                    About Us
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink
+                    to="/tour"
+                    className={({ isActive }) =>
+                      isActive ? 'nav-link active-link' : 'nav-link'
+                    }
+                  >
+                    Tour
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink
+                    to="/payment"
+                    className={({ isActive }) =>
+                      isActive ? 'nav-link active-link' : 'nav-link'
+                    }
+                  >
+                    Payment
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink
+                    to="/contact-us"
+                    className={({ isActive }) =>
+                      isActive ? 'nav-link active-link' : 'nav-link'
+                    }
+                  >
+                    Contact Us
+                  </NavLink>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <Outlet />
+      </div>
+    </>
+  );
+};
+
+export default Navbar;
+
+
+
+
+
+
+
+// import { useEffect } from "react";
+// import { NavLink, Outlet, useLocation } from "react-router-dom";
 // import Navlogo1 from "../../assets/navlogo.png";
-// import logo from "../../assets/cabLogo (1).png";
-// import "../../scss/style.css";
+// import './Navbar.css'
 
 // const Navbar = () => {
+//   const location = useLocation(); // Hook to get current route
+
+//   useEffect(() => {
+//     // Close the navbar toggle when route changes
+//     const navbarToggler = document.querySelector('.navbar-collapse');
+//     if (navbarToggler && navbarToggler.classList.contains('show')) {
+//       navbarToggler.classList.remove('show'); // Close the menu
+//     }
+
+//     // Scroll to the top of the page when route changes
+//     window.scrollTo(0, 0);
+//   }, [location]); // Runs whenever the route changes
+
 //   return (
 //     <>
-//         <nav className="navbar navbar-expand-lg navbar-light bg-secondary">
+//       <div>
+//         <nav
+//           className="navbar navbar-expand-lg navbar-light"
+//           style={{
+//             backgroundColor: "#183650",
+//             position: "fixed",
+//             width: "100%",
+//             zIndex: "999",
+//           }}
+//         >
 //           <div className="container-fluid">
-//               <a className="navbar-brand" href="#">
-//             <div className="d-flex justify-content-center align-items-center">
+//             {/* Brand Logo */}
+//             <a className="navbar-brand" href="#">
+//               <img
+//                 className="cabLogo"
+//                 src={Navlogo1}
+//                 alt="Logo"
+//               />
+//             </a>
 
-//                 {/* <img className="cabLogo" src={Navlogo} alt="" /> */}
-//                 <img className="cabLogo" src={Navlogo1} alt="" />
-//                 {/* <img className="cabLogo" width='100px' height='100px' src={logo} alt="" /> */}
-
-//                 {/* <h3 className="ms-3 text-white">
-//                 <span  style={{color:'#ffb606'}}>K</span>ashif <span style={{color:'#ffb606'}}>C</span>ab
-//                 <br />
-//                 <span><h5>Book your ride</h5></span>
-//                 </h3> */}
-//               </div>
-//               </a>
-
-//               <button
-//                 className="navbar-toggler"
-//                 type="button"
-//                 data-bs-toggle="collapse"
-//                 data-bs-target="#navbarSupportedContent"
-//                 aria-controls="navbarSupportedContent"
-//                 aria-expanded="false"
-//                 aria-label="Toggle navigation"
-//               >
-//                 <span className="navbar-toggler-icon"></span>
-//               </button>
-//             <div
-//               className="collapse d-flex justify-content-end  "
-//               id="navbarSupportedContent"
+//             {/* Hamburger Menu for small screens */}
+//             <button
+//               className="navbar-toggler"
+//               type="button"
+//               data-bs-toggle="collapse"
+//               data-bs-target="#navbarNav"
+//               aria-controls="navbarNav"
+//               aria-expanded="false"
+//               aria-label="Toggle navigation"
 //             >
-//               <ul className="navbar-nav mb-2 mb-lg-0 ">
-//                 <li className="nav-item">
-//                     {/* <h3 style={{color:'#ffb606'}}> */}
-//                   <a className="nav-link active " aria-current="page" href="#"  style={{color:'#ffb606'}}>
+//               <span
+//                 className="navbar-toggler-icon"
+//                 style={{
+//                   backgroundColor: "white",
+//                   border: "9px solid white",
+//                   borderRadius: "8px",
+//                   padding: "12px",
+//                 }}
+//               ></span>
+//             </button>
 
+//             {/* Navbar links */}
+//             <div className="collapse navbar-collapse" id="navbarNav">
+//               <ul className="navbar-nav ms-auto">
+//                 <li className="nav-item">
+//                   <NavLink
+//                     to="/cab-booking"
+//                     className="nav-link"
+//                     style={{ color: "#ffb606" }}
+//                   >
 //                     Home
-//                   </a>
-//                     {/* </h3> */}
+//                   </NavLink>
 //                 </li>
 //                 <li className="nav-item">
-//                   <a className="nav-link text-white" href="#">
+//                   <NavLink to="/about-us" className="nav-link text-white">
 //                     About Us
-//                   </a>
+//                   </NavLink>
 //                 </li>
 //                 <li className="nav-item">
-//                   <a
-//                     className="nav-link  text-white"
-//                     href="#"
-//                     aria-disabled="true"
-//                   >
-//                     Tours
-//                   </a>
-//                 </li>{" "}
+//                   <NavLink to="/tour" className="nav-link text-white">
+//                     Tour
+//                   </NavLink>
+//                 </li>
 //                 <li className="nav-item">
-//                   <a
-//                     className="nav-link disabled text-white"
-//                     href="#"
-//                     aria-disabled="true"
-//                   >
-//                     Payments
-//                   </a>
-//                 </li>{" "}
+//                   <NavLink to="/payment" className="nav-link text-white">
+//                     Payment
+//                   </NavLink>
+//                 </li>
 //                 <li className="nav-item">
-//                   <a
-//                     className="nav-link text-white"
-//                     href="#"
-//                     aria-disabled="true"
-//                   >
+//                   <NavLink to="/contact-us" className="nav-link text-white">
 //                     Contact Us
-//                   </a>
+//                   </NavLink>
 //                 </li>
 //               </ul>
 //             </div>
 //           </div>
 //         </nav>
+//         <Outlet />
+//       </div>
 //     </>
 //   );
 // };
 
 // export default Navbar;
-
-import React from "react";
-import Navlogo1 from "../../assets/navlogo.png";
-import { NavLink } from "react-router-dom";
-const Navbar = () => {
-  return (
-    <nav
-      className="navbar navbar-expand-lg navbar-light "
-      style={{ backgroundColor: "#183650",position:'fixed',width:"100%",zIndex:'999' }}
-    >
-      <div className="container-fluid">
-        {/* Brand Logo */}
-        <a className="navbar-brand" href="#">
-          <img
-            className="cabLogo"
-            style={{ height: "50px" }}
-            src={Navlogo1}
-            alt=""
-          />
-        </a>
-
-        {/* Hamburger Menu for small screens */}
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span
-            className="navbar-toggler-icon"
-            style={{
-              backgroundColor: "white",
-              border: "9px solid white",
-              borderRadius: "8px",
-              padding: "12px",
-            }}
-          ></span>
-        </button>
-
-        {/* Navbar links */}
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
-              <NavLink to="/" className="nav-link" style={{ color: "#ffb606" }}>
-                Home
-              </NavLink>
-            </li>
-            <NavLink to="/about-us" className="nav-link  text-white">
-              <li className="nav-item">About Us</li>
-            </NavLink>
-            <NavLink to="/tour" className="nav-link  text-white">
-              <li className="nav-item">Tour</li>
-            </NavLink>
-            <NavLink to="/payment" className="nav-link  text-white">
-              <li className="nav-item">Payment</li>
-            </NavLink>
-            <NavLink to="/contact-us" className="nav-link  text-white">
-              <li className="nav-item">Contact Us</li>
-            </NavLink>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  );
-};
-
-export default Navbar;

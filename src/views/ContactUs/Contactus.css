@@ -1,5 +1,7 @@
+
+
 /* ContactUs.css */
-.contact-us {
+/* .contact-us {
     width: 50%;
     margin: auto;
     padding: 20px;
@@ -7,6 +9,8 @@
     border-radius: 10px;
   }
   
+
+
   form div {
     margin-bottom: 15px;
   }
@@ -42,3 +46,18 @@
     font-size: 0.9em;
   }
   
+  @media (max-width: 768px) {    
+    .h5{
+      font-size: 0rem !important;
+      color: #218838;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .h5{
+      font-size: 0rem !important;
+      color: #218838;
+    }
+  }
+
+   */

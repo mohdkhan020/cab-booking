@@ -1,5 +1,6 @@
-import React from "react";
 import "./Cabdetails.css";
+import Innova from "../../assets/Innova.jpg";
+import Innova1 from "../../assets/Innova1.jpg";
 
 const CabDetails = () => {
   return (
@@ -9,29 +10,31 @@ const CabDetails = () => {
           <div className="row ms-0 text-center mt-5 ">
             <div className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
               <div className="cab-info">
-                <h1 className="cab-title">
+                <h1 className="cab-title-header">
                   Taxi Service in Bareilly - Book Your Cab Now{" "}
                 </h1>
-                Looking for reliable taxi services in Bareilly? Book your
-                Bareilly cab easily with our fast, affordable, and safe online
-                cab booking service. Whether you need a local ride or an
-                outstation taxi, we offer 24/7 Bareilly taxi service for all
-                your travel needs. Enjoy convenient airport transfers, city
-                tours, and more with experienced drivers. Book your Bareilly cab
-                now and experience a hassle-free ride!
+                <p className="cab-description">
+                  Looking for reliable taxi services in Bareilly? Book your
+                  Bareilly cab easily with our fast, affordable, and safe online
+                  cab booking service. Whether you need a local ride or an
+                  outstation taxi, we offer 24/7 Bareilly taxi service for all
+                  your travel needs. Enjoy convenient airport transfers, city
+                  tours, and more with experienced drivers. Book your Bareilly
+                  cab now and experience a hassle-free ride!
+                </p>
               </div>
             </div>
           </div>
         </div>
         {/* Image with description */}
 
-        <div className="row ms-0 text-center mt-5 ">
+        <div className="row ms-0 text-center mt-5">
           <div className="d-flex col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 align-items-center justify-content-center">
             <img
-              src="https://media.istockphoto.com/id/492362277/photo/3d-yellow-taxi.jpg?s=612x612&w=0&k=20&c=RXoWaS8t0UrqGN0cFxrbLDROw_bThdCrh-lSYjWU5L0="
+              className="image"
+              src={Innova}
               alt=""
-              width="150px"
-              height="150px"
+              style={{ maxWidth: "60%", height: "auto" }}
             />
           </div>
           <div className="col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8">
@@ -55,7 +58,7 @@ const CabDetails = () => {
           </div>
         </div>
 
-        <div className="reverse-image row ms-0 text-center mt-5 ">
+        <div className="reverse-image row ms-0 text-center mt-5 mb-5 ">
           <div className="col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8">
             <div className="cab-info">
               <h1 className="cab-title">
@@ -75,20 +78,18 @@ const CabDetails = () => {
           </div>
           <div className="d-flex col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 align-items-center justify-content-center">
             <img
-              src="https://media.istockphoto.com/id/492362277/photo/3d-yellow-taxi.jpg?s=612x612&w=0&k=20&c=RXoWaS8t0UrqGN0cFxrbLDROw_bThdCrh-lSYjWU5L0="
+              src={Innova1}
               alt=""
-              width="150px"
-              height="150px"
-              style={{ border: " 2px solid #ddd;" }}
+              style={{ maxWidth: "60%", height: "auto" }}
             />
           </div>
         </div>
 
         {/* three div */}
 
-        <div className="row g-0 text-center">
-          <div className="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-            <div className="cab-info-card">
+        <div className="row g-0 text-center mb-5">
+          <div className="cab-info-card col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+            <div className="">
               <h1 className="cab-title">
                 Top Car Rental Service in Bareilly - Affordable & Reliable
                 Rentals
@@ -100,8 +101,8 @@ const CabDetails = () => {
               </p>
             </div>
           </div>
-          <div className="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-            <div className="cab-info-card">
+          <div className="cab-info-card col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+            <div className="">
               <h1 className="cab-title">
                 Affordable Car Hire in Bareilly - Book the Cheapest Cabs with
                 Reliable Service and Comfortable Rides.
@@ -114,18 +115,18 @@ const CabDetails = () => {
               </p>
             </div>
           </div>
-          <div className="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-            <div className="cab-info-card">
+          <div className="cab-info-card col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+            <div className="">
               <h1 className="cab-title">
                 Top Corporate Taxi Service in Bareilly | Reliable, Professional,
                 and Affordable Transportation Solutions for Businesses. Book
                 Your Corporate Cab Today!
               </h1>
               <p className="cab-description">
-                KashifCab offers affordable corporate taxi services for all your
-                business transportation needs. Covering over 8000 destinations
-                across 100+ cities, we provide reliable and efficient travel
-                solutions for your company.
+                Kashif Cab offers affordable corporate taxi services for all
+                your business transportation needs. Covering over 8000
+                destinations across 100+ cities, we provide reliable and
+                efficient travel solutions for your company.
               </p>
             </div>
           </div>
@@ -133,9 +134,9 @@ const CabDetails = () => {
 
         {/* two div */}
 
-        <div className="row g-0 text-center">
+        <div className="row g-0 text-center align-content-center mb-5">
           <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-            <div className="cab-info">
+            <div className="text-center p-3">
               <h1 className="cab-title">
                 Book Bareilly Airport Taxi - Trusted Airport Cab Service in
                 Bareilly
