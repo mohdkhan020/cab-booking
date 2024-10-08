@@ -22,22 +22,36 @@
 }
 
 
-@media (max-width: 768px) {
-  .carousel-item img {
-    height: 70vh; /* Adjust height for tablets */
-  }
-  .heroImageMargin{
-    margin-top: 68px;
-  }
-}
 
+/* For small devices like mobile phones */
 @media (max-width: 576px) {
   .carousel-item img {
-    height: 50vh; /* Adjust height for mobile screens */
+    height: 35vh; /* Adjust height for mobile screens */
+    object-fit: cover; /* Ensure the image scales correctly */
   }
-  .heroImageMargin{
+  .heroImageMargin {
+    margin-top: 67px;
+  }
+}
+
+/* For medium devices like tablets */
+@media (min-width: 577px) and (max-width: 991px) {
+  .carousel-item img {
+    height: 60vh; /* Adjust height for tablet screens */
+    object-fit: cover; /* Ensure the image scales correctly */
+  }
+  .heroImageMargin {
     margin-top: 68px;
   }
 }
 
-
+/* For large devices like laptops and desktops */
+@media (min-width: 992px) {
+  .carousel-item img {
+    height: 90vh; /* Adjust height for desktop screens */
+    object-fit: cover; /* Ensure the image scales correctly */
+  }
+  .heroImageMargin {
+    margin-top: 68px;
+  }
+}

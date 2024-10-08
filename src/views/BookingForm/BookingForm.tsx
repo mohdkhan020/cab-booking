@@ -34,7 +34,7 @@ const BookingForm = () => {
     const encodedMessage = encodeURIComponent(message);
 
     // WhatsApp URL (replace the number with the recipient's phone number)
-    const phoneNumber = "8791796433"; // Replace with your WhatsApp number
+    const phoneNumber = "+918791796433"; // Replace with your WhatsApp number
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
     // Redirect the user to WhatsApp

@@ -12,7 +12,7 @@ function Contactus() {
               className="img-fluid w-100 h-100 rounded-3"
             />
             <h1 className="position-absolute top-0 start-0 mt-4 ms-4 text-white display-4">Contact Us</h1>
-            <div className="position-absolute bottom-0 w-100 p-4">
+            <div className=" position-absolute bottom-0 w-100 p-4">
               <div className="bg-white rounded-3 p-4 shadow">
                 <a href="tel:470-601-1911" className="d-flex align-items-center mb-3 text-decoration-none">
                   <svg

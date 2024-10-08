@@ -10,11 +10,37 @@
     transition: color 0.3s ease, border-bottom 0.3s ease;
   }
   
-  /* Active link styling for all links */
-  .active-link {
-    border-bottom: 2px solid #ffb606; /* #ffb606 underline when active */
-  }
   
+  .nav-link {
+    border-bottom: none; /* #ffb606 underline when nav */
+    width: max-content;
+    position: relative; /* Ensure proper positioning for the underline */
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid #cdbe99; /* Underline color on hover */
+}
+
+/* Optional: You can also add a transition for a smooth effect */
+.nav-link,
+.nav-link:hover {
+    transition: border-bottom 0.3s ease; /* Smooth transition effect */
+}
+
+  .active-link {
+    border-bottom: 2px solid #ffb606;; /* #ffb606 underline when active */
+    width: max-content;
+    position: relative; /* Ensure proper positioning for the underline */
+}
+
+/* Optional: You can also add a transition for a smooth effect */
+.active-link,
+.active-link:hover {
+    transition: border-bottom 0.3s ease; /* Smooth transition effect */
+}
+
+
+
   /* Home link will always have #ffb606 text color */
   .home-active {
     color: #ffb606;
@@ -28,16 +54,11 @@
     color: inherit !important; /* This will ensure the color is taken from your custom styles */
   }
   
-
-
-
-
-
-
-
-
-
-
+  .navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Example with light blue shadow */
+}
 
 
 

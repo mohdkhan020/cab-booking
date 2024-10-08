@@ -28,7 +28,8 @@ const CabDetails = () => {
         </div>
         {/* Image with description */}
 
-        <div className="row ms-0 text-center mt-5">
+      <div className="container">
+      <div className="row ms-0 text-center mt-5">
           <div className="d-flex col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 align-items-center justify-content-center">
             <img
               className="image"
@@ -58,7 +59,7 @@ const CabDetails = () => {
           </div>
         </div>
 
-        <div className="reverse-image row ms-0 text-center mt-5 mb-5 ">
+        <div className="row reverse-image  ms-0 text-center mt-5 mb-5 ">
           <div className="col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8">
             <div className="cab-info">
               <h1 className="cab-title">
@@ -84,9 +85,11 @@ const CabDetails = () => {
             />
           </div>
         </div>
+      </div>
 
         {/* three div */}
 
+        <div className="container">
         <div className="row g-0 text-center mb-5">
           <div className="cab-info-card col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
             <div className="">
@@ -132,6 +135,7 @@ const CabDetails = () => {
           </div>
         </div>
 
+        </div>
         {/* two div */}
 
         <div className="row g-0 text-center align-content-center mb-5">
