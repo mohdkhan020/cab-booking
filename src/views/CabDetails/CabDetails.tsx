@@ -35,7 +35,7 @@ const CabDetails = () => {
               className="image"
               src={Innova}
               alt=""
-              style={{ maxWidth: "60%", height: "auto" }}
+              style={{ maxWidth: "60%", height: "auto",borderRadius: "8px" }}
             />
           </div>
           <div className="col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8">
@@ -81,7 +81,7 @@ const CabDetails = () => {
             <img
               src={Innova1}
               alt=""
-              style={{ maxWidth: "60%", height: "auto" }}
+              style={{ maxWidth: "60%", height: "auto",borderRadius: "8px" }}
             />
           </div>
         </div>

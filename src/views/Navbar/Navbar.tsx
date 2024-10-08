@@ -28,13 +28,16 @@ const Navbar = () => {
           }}
         >
           <div className="container-fluid">
-            <a className="navbar-brand" href="#">
+            {/* <a className="navbar-brand" href="#"> */}
+              <NavLink to="/cab-booking" className="navbar-brand">
+                {/* Text */}
               <img
                 className="cabLogo"
                 src={Navlogo1}
                 alt="Logo"
               />
-            </a>
+              </NavLink>
+            {/* </a> */}
 
             <button
               className="navbar-toggler"

@@ -78,6 +78,7 @@ const BookingForm = () => {
       <input
         type="date"
         name="pickupDate"
+        placeholder="PickUp-Date"
         className="form-control mb-2"
         value={formData.pickupDate}
         onChange={handleInputChange}
@@ -86,6 +87,7 @@ const BookingForm = () => {
       <input
         type="time"
         name="pickupTime"
+        placeholder="PickUp-Time"
         className="form-control mb-2"
         value={formData.pickupTime}
         onChange={handleInputChange}
