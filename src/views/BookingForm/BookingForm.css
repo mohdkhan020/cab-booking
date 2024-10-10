@@ -1,0 +1,92 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Let it fill the viewport height */
+  overflow: hidden;
+}
+
+.hero-background img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.booking-form input, .booking-form select {
+  width: 90%;
+  max-width: 400px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.cta-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.testimonials, .contact-info {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .hero-overlay {
+    padding: 10px;
+    position: absolute;
+    top: 50px;
+  }
+  /* .hero-overlay {
+    position: absolute;
+    top: 50px;
+  } */
+  .cta-button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .booking-form input, .booking-form select {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .testimonials, .contact-info {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .booking-form input, .booking-form select {
+    font-size: 12px;
+    padding: 6px;
+  }
+  .hero-overlay {
+    position: absolute;
+    top: 50px;
+  }
+  .cta-button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}

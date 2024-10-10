@@ -48,7 +48,7 @@
 /* For large devices like laptops and desktops */
 @media (min-width: 992px) {
   .carousel-item img {
-    height: 90vh; /* Adjust height for desktop screens */
+    height: 85vh; /* Adjust height for desktop screens */
     object-fit: cover; /* Ensure the image scales correctly */
   }
   .heroImageMargin {

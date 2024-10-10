@@ -21,12 +21,12 @@ body {
 }
 h1{
   font-family: 'Poppins', sans-serif;
-  font-weight: 700; /* For bold headings */
+  font-weight: 200; /* For bold headings */
   color: #6c757d; /* Adjust this to fit your design */
 }
 
 p, li, span {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400; /* For body text */
   color: #ece3e3; /* Adjust for readability */
 }
