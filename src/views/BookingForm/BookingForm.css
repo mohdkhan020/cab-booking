@@ -13,7 +13,7 @@
 
 .hero-overlay {
   position: absolute;
-  top: 50px;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
@@ -52,15 +52,18 @@
 }
 
 @media (max-width: 768px) {
+ 
   .hero-overlay {
-    padding: 10px;
-    position: absolute;
-    top: 50px;
+   height: 102%;
   }
-  /* .hero-overlay {
-    position: absolute;
-    top: 50px;
-  } */
+
+  .contactMargin {
+    margin-bottom: 30px;
+}
+  .booking-form {
+  
+    width: 45%;
+  }
   .cta-button {
     font-size: 16px;
     padding: 8px 16px;
@@ -75,18 +78,36 @@
     font-size: 14px;
   }
 }
-
-@media (max-width: 480px) {
+/* @media (max-width: 568px) {
+  .hero-overlay {
+    height: 102%;
+   }
+} */
+@media (max-width: 568px) {
   .booking-form input, .booking-form select {
     font-size: 12px;
     padding: 6px;
   }
+  @media (max-width: 576px) {
+    .contactMargin {
+        margin-top: -120px;
+        margin-bottom: 30px;
+    }
+}
+
+
   .hero-overlay {
     position: absolute;
-    top: 50px;
+    top: -192px;
+    height: 175%;
   }
   .cta-button {
     font-size: 12px;
     padding: 6px 12px;
   }
+  .booking-form {
+  
+    width: 63%;
+  }
+  
 }

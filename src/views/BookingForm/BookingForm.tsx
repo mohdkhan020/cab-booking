@@ -52,7 +52,7 @@ const BookingForm = () => {
         />
       </div>
       <div className="hero-overlay text-white text-center d-flex flex-column justify-content-center align-items-center">
-        <h1 className='text-white'>Your reliable taxi service, 24/7</h1>
+        <h1 className='contactMargin text-white'>Your reliable taxi service, 24/7</h1>
         <p>Book your taxi in just a few minutes</p>
        
 
@@ -112,7 +112,7 @@ const BookingForm = () => {
     </form>
 
         <div className="testimonials mt-4">
-          <blockquote>"Best taxi ride I've ever had! - Maria S."</blockquote>
+          <blockquote>"Best taxi ride I've ever had! - Delhi."</blockquote>
         </div>
 
         <div className="contact-info mt-3">

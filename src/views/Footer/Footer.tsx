@@ -18,7 +18,7 @@ const Footer = () => {
                     alt="logo"
                   />
                 </a>
-                <p>
+                <p style={{fontWeight:200}}>
                   Top Corporate Taxi Service in Bareilly - Your reliable partner
                   for professional and affordable transportation solutions. We
                   prioritize safety and punctuality for all your business needs.
@@ -39,33 +39,33 @@ const Footer = () => {
                 <h5 className="widget-title">Popular Services</h5>
                 <ul className="services-link-list">
                   <li>
-                    <a href="#">
+                    <a href="#" style={{fontWeight:200,color:'white'}}>
                       <FaLongArrowAltRight /> Corporate Cab Booking
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="#" style={{fontWeight:200,color:'white'}}>
                       <FaLongArrowAltRight /> Airport Transfers
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="#" style={{fontWeight:200,color:'white'}}>
                       <FaLongArrowAltRight /> Event Transportation
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="#" style={{fontWeight:200,color:'white'}}>
                       <FaLongArrowAltRight /> Long-Distance Travel
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="#" style={{fontWeight:200,color:'white'}}>
                       <FaLongArrowAltRight /> Executive Taxi Services
                     </a>
                   </li>
                   <li>
-                    <a href="#">
-                      <FaLongArrowAltRight /> Chauffeur Services
+                    <a href="#" style={{fontWeight:200,color:'white'}}>
+                      <FaLongArrowAltRight /> Char Dham Services
                     </a>
                   </li>
                 </ul>
@@ -82,7 +82,7 @@ const Footer = () => {
                         July 18, 2024
                       </a>
                       <h6 className="small-post-title">
-                        <a href="#">New Corporate Cab Service Launched!</a>
+                        <a href="#" style={{fontWeight:200}}>New Corporate Cab Service Launched!</a>
                       </h6>
                     </div>
                   </li>
@@ -92,7 +92,7 @@ const Footer = () => {
                         August 5, 2024
                       </a>
                       <h6 className="small-post-title">
-                        <a href="#">Tips for Hassle-Free Airport Transfers</a>
+                        <a  href="#" style={{fontWeight:200}}>Tips for Hassle-Free Airport Transfers</a>
                       </h6>
                     </div>
                   </li>
@@ -104,7 +104,8 @@ const Footer = () => {
               <div className="widget newsletter-widget">
                 <h5 className="widget-title">Newsletter</h5>
                 <div className="footer-newsletter">
-                  <p>
+                <p style={{fontWeight:200}}>
+
                     Sign Up for our newsletter to receive the latest updates on
                     our services and promotions.
                   </p>

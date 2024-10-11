@@ -72,8 +72,20 @@
   /* For small devices like mobile phones */
   @media (max-width: 576px) {
     .cabLogo {
-      height: 40px; /* Adjust logo size for mobile */
+      height: 35px; /* Adjust logo size for mobile */
     }
+    .navbar-toggler-icon{
+      padding: 9px !important;
+      border: 7px solid white !important;
+      border-radius: 4px !important;
+    }
+    .btn{
+      font-size: .8rem !important;
+      padding: .32rem .7rem !important;
+    }
+    /* a{
+      font-size: 13px;
+    } */
   }
   
   /* For medium devices like tablets */
