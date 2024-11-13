@@ -1,3 +1,6 @@
-# https://www.robotstxt.org/robotstxt.html
+# Allow all search engines to index everything
 User-agent: *
-Disallow:
+Disallow: 
+
+# Sitemap location
+Sitemap: https://www.broomcab.com/sitemap.xml

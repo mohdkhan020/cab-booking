@@ -64,7 +64,7 @@ const Navbar = () => {
                 {/* Home link with #ffb606 text and underline */}
                 <li className="nav-item">
                   <NavLink
-                    to="/cab-booking"
+                    to="/"
                     className={({ isActive }) =>
                       isActive ? 'nav-link active-link home-active' : 'nav-link home-active'
                     }

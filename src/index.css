@@ -63,9 +63,7 @@ p, li, span {
     font-weight: 200;
     font-size: 18px;
   }
-  a{
-    margin-bottom: 1rem;
-  }
+  
 }
 
 /* For large devices like laptops and desktops */
@@ -74,8 +72,6 @@ p, li, span {
     font-weight: 200;
     font-size: 20px;
   }
-  a{
-    margin-bottom: 1.5rem;
-  }
+  
  
 }

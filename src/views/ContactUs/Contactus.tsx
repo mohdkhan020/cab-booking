@@ -88,7 +88,7 @@ function Contactus() {
               <div className="bg-white rounded-3 p-4 shadow">
                <div>
                  <a
-                  href="tel:470-601-1911"
+                  href="tel:+91-8791796433"
                   className="d-flex align-items-center  text-decoration-none"
                 >
                   <svg
@@ -103,7 +103,7 @@ function Contactus() {
                   <h5 className="mb-0">+91-8791796433</h5>
                 </a>
                 <a
-                  href="mailto:example@domain.com"
+                  href="kashifkhan38374672@gmail.com"
                   className="d-flex align-items-center mb-3 text-decoration-none"
                 >
                   <svg

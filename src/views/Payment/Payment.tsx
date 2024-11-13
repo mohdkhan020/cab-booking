@@ -17,6 +17,23 @@ const Payment = () => {
   return (
     <Container className="py-5">
       <Row style={{ marginTop: "80px" }}>
+          {/* QR Payment Section */}
+          <Col lg={6} md={6} sm={12} className="p-4 rounded-3">
+          <div className="position-relative h-100" style={{ borderRadius: "5px" }}>
+            <h1
+              className="mb-4 text-center"
+              style={{ color: "#76aaf5", textDecoration: "underline" }}
+            >
+              QR Payment
+            </h1>
+            <img
+              className="img-fluid mb-4"
+              src={QRPayment}
+              alt="QR Payment"
+              style={{ maxWidth: "100%" }} // Ensure responsive image size
+            />
+          </div>
+        </Col>
         {/* Card Payment Section */}
         <Col
           lg={6}
@@ -99,23 +116,7 @@ const Payment = () => {
           </div>
         </Col>
 
-        {/* QR Payment Section */}
-        <Col lg={6} md={6} sm={12} className="p-4 rounded-3">
-          <div className="position-relative h-100" style={{ borderRadius: "5px" }}>
-            <h1
-              className="mb-4 text-center"
-              style={{ color: "#76aaf5", textDecoration: "underline" }}
-            >
-              QR Payment
-            </h1>
-            <img
-              className="img-fluid mb-4"
-              src={QRPayment}
-              alt="QR Payment"
-              style={{ maxWidth: "100%" }} // Ensure responsive image size
-            />
-          </div>
-        </Col>
+      
       </Row>
 
       {/* Additional styles for smaller screens */}

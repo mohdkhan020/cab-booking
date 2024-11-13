@@ -9,16 +9,16 @@ import ContactUs from "./views/ContactUs/Contactus";
 import Payment from "./views/Payment/Payment";
 import AboutUs from "./views/AboutUs/AboutUs";
 import Tour from "./views/Tour/Tour";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+// import { Switch } from 'react-router'
 
 const App = () => {
   
   return (
     <div>
-      <Router>
         <Navbar />
         <Routes>
-          <Route path="/cab-booking" element={<HeroSlider />} />
+          <Route path="/" element={<HeroSlider />} />
           <Route path="/sign-up" element={<SignUp />} />
           <Route path="/tour" element={<Tour />} />
           <Route path="/about-us" element={<AboutUs />} />
@@ -27,7 +27,6 @@ const App = () => {
         </Routes>
        {/* <SignUp /> */}
         <Footer />
-      </Router>
     </div>
   );
 };
