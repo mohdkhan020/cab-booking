@@ -1,3 +1,9 @@
-# https://www.robotstxt.org/robotstxt.html
+# Allow all search engines to index everything
 User-agent: *
-Disallow:
+Disallow: 
+
+# Specify preferred HTTPS domain for indexing
+Host: https://www.broomcab.com
+
+# Sitemap location
+Sitemap: https://www.broomcab.com/sitemap.xml
