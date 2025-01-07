@@ -1,24 +1,64 @@
 import { FaPhone, FaClock, FaLongArrowAltRight } from "react-icons/fa";
-import KKLogo from "../../assets/navlogo.png";
+import { destinations } from "../../components/Destination";
+import QRPayment from "../../assets/Payment/QR payment.webp";
+import KKLogo from "../../assets/navlogo.webp";
 import "./Footer.css";
+import "../Tour/Tour.css";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
+  const handleDestinationClick = (pickup: string, drop: string) => {
+    navigate("/sign-up", {
+      state: { pickupLocation: pickup, dropoffLocation: drop },
+    });
+  };
+
   return (
     <footer className="footer-section">
       <div className="footer-top">
         <div className="container">
+          <section>
+            <h2 style={{ color: "white", marginBottom: "40px" }}>
+              Popular Destinations
+            </h2>
+            <ul className="destination-list">
+              {destinations.map((destination, index) => (
+                <li key={index} className="destination-item">
+                  <a
+                    href={`/cabs/${destination.pickup.toLowerCase()}-to-${destination.drop.toLowerCase()}`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleDestinationClick(
+                        destination.pickup,
+                        destination.drop
+                      );
+                    }}
+                    style={{
+                      color: "white",
+                      textDecoration: "none",
+                      fontSize: "15px",
+                    }}
+                    aria-label={`Book a cab from ${destination.pickup} to ${destination.drop}`}
+                  >
+                    {destination.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
+
           <div className="row">
             {/* Company Intro */}
             <div className="col-lg-3 col-md-6 col-sm-6">
               <div className="widget company-intro-widget">
                 <a href="index.html" className="site-logo">
                   <img
-                    // src="https://i.ibb.co/vLDyPtM/ak-logo-yellow.png"
                     src={KKLogo}
                     alt="logo"
                   />
                 </a>
-                <p style={{fontWeight:200}}>
+                <p style={{ fontWeight: 200 }}>
                   Top Corporate Taxi Service in Bareilly - Your reliable partner
                   for professional and affordable transportation solutions. We
                   prioritize safety and punctuality for all your business needs.
@@ -39,32 +79,32 @@ const Footer = () => {
                 <h5 className="widget-title">Popular Services</h5>
                 <ul className="services-link-list">
                   <li>
-                    <a href="#" style={{fontWeight:200,color:'white'}}>
+                    <a href="#" style={{ fontWeight: 200, color: "white" }}>
                       <FaLongArrowAltRight /> Corporate Cab Booking
                     </a>
                   </li>
                   <li>
-                    <a href="#" style={{fontWeight:200,color:'white'}}>
+                    <a href="#" style={{ fontWeight: 200, color: "white" }}>
                       <FaLongArrowAltRight /> Airport Transfers
                     </a>
                   </li>
                   <li>
-                    <a href="#" style={{fontWeight:200,color:'white'}}>
+                    <a href="#" style={{ fontWeight: 200, color: "white" }}>
                       <FaLongArrowAltRight /> Event Transportation
                     </a>
                   </li>
                   <li>
-                    <a href="#" style={{fontWeight:200,color:'white'}}>
+                    <a href="#" style={{ fontWeight: 200, color: "white" }}>
                       <FaLongArrowAltRight /> Long-Distance Travel
                     </a>
                   </li>
                   <li>
-                    <a href="#" style={{fontWeight:200,color:'white'}}>
+                    <a href="#" style={{ fontWeight: 200, color: "white" }}>
                       <FaLongArrowAltRight /> Executive Taxi Services
                     </a>
                   </li>
                   <li>
-                    <a href="#" style={{fontWeight:200,color:'white'}}>
+                    <a href="#" style={{ fontWeight: 200, color: "white" }}>
                       <FaLongArrowAltRight /> Char Dham Services
                     </a>
                   </li>
@@ -82,7 +122,9 @@ const Footer = () => {
                         July 18, 2024
                       </a>
                       <h6 className="small-post-title">
-                        <a href="#" style={{fontWeight:200}}>New Corporate Cab Service Launched!</a>
+                        <a href="#" style={{ fontWeight: 200 }}>
+                          New Corporate Cab Service Launched!
+                        </a>
                       </h6>
                     </div>
                   </li>
@@ -92,7 +134,9 @@ const Footer = () => {
                         August 5, 2024
                       </a>
                       <h6 className="small-post-title">
-                        <a  href="#" style={{fontWeight:200}}>Tips for Hassle-Free Airport Transfers</a>
+                        <a href="#" style={{ fontWeight: 200 }}>
+                          Tips for Hassle-Free Airport Transfers
+                        </a>
                       </h6>
                     </div>
                   </li>
@@ -102,22 +146,14 @@ const Footer = () => {
             {/* Newsletter */}
             <div className="col-lg-3 col-md-6 col-sm-6">
               <div className="widget newsletter-widget">
-                <h5 className="widget-title">Newsletter</h5>
+                <h5 className="widget-title">QR Payment</h5>
                 <div className="footer-newsletter">
-                <p style={{fontWeight:200}}>
-
-                    Sign Up for our newsletter to receive the latest updates on
-                    our services and promotions.
-                  </p>
-                  <form className="news-letter-form">
-                    <input
-                      type="email"
-                      name="news-email"
-                      id="news-email"
-                      placeholder="Your email address"
-                    />
-                    <input type="submit" value="Send" />
-                  </form>
+                  <img
+                    className="img-fluid"
+                    src={QRPayment}
+                    alt="QR Payment"
+                    style={{ maxWidth: "40%" }} // Ensure responsive image size
+                  />
                 </div>
               </div>
             </div>
@@ -125,26 +161,38 @@ const Footer = () => {
         </div>
       </div>
       {/* Footer Bottom */}
+
       <div className="footer-bottom">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-6 col-sm-6 text-sm-left text-center">
-              <span className="copy-right-text">
-                © {new Date().getFullYear()} Top Corporate Taxi Service. All
-                Rights Reserved.
-              </span>
-            </div>
-            <div className="col-md-6 col-sm-6">
-              <ul className="terms-privacy d-flex justify-content-sm-end justify-content-center">
-                <li>
-                  <a href="#">Terms & Conditions</a>
-                </li>
-                <li>
-                  <a href="#">Privacy Policy</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+        <div className="footer">
+          <p className="quote">
+            © {new Date().getFullYear()}
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footeraAchor"
+            >
+              <span> Top Corporate Taxi Service. All Rights Reserved.</span>
+            </a>
+          </p>
+
+          <ul>
+            <li>
+              <a href="#" aria-label="Twitter" className="footeraAchor">
+                <i className="fab fa-twitter-square fa-2x"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Facebook" className="footeraAchor">
+                <i className="fab fa-facebook-square fa-2x"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Instagram" className="footeraAchor">
+                <i className="fab fa-instagram fa-2x"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>

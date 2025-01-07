@@ -1,63 +1,23 @@
-
-
-/* ContactUs.css */
-/* .contact-us {
-    width: 50%;
-    margin: auto;
-    padding: 20px;
-    background-color: #f4f4f4;
-    border-radius: 10px;
+/* * {
+    transition: all 0.3s ease-in-out;
+  } */
+  
+  .bg-white-gradient {
+      background: linear-gradient(to bottom, rgb(255, 255, 255) 60%, rgba(255, 255, 255, 0));
   }
   
-
-
-  form div {
-    margin-bottom: 15px;
-  }
-  
-  label {
-    display: block;
+  /* bootstrap overwrites */
+  .accordion-button {
+    /*accordion button that is active*/
     font-weight: bold;
+    background: transparent !important;
+    border-bottom: 1px solid;
   }
-  
-  input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+  .accordion-button.collapsed {
+    /*accordion button that is not active*/
+    font-weight: semibold;
+    color: #555;
   }
-  
-  button {
-    padding: 10px 20px;
-    background-color: #28a745;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  .accordion-body {
+    background: #f7f7f7;
   }
-  
-  button:hover {
-    background-color: #218838;
-  }
-  
-  .error {
-    color: red;
-    font-size: 0.9em;
-  }
-  
-  @media (max-width: 768px) {    
-    .h5{
-      font-size: 0rem !important;
-      color: #218838;
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .h5{
-      font-size: 0rem !important;
-      color: #218838;
-    }
-  }
-
-   */

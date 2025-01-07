@@ -1,6 +1,5 @@
-import React from 'react';
 import './AboutUs.css'
-import AboutUsImage from '../../assets/aboutus/istockphoto-1086341762-612x612.jpg'
+import AboutUsImage from '../../assets/aboutus/aboutus.jpg'
 const AboutUs = () => {
   return (
     <div className="container py-5">

@@ -5,85 +5,65 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.cab-info {
-  margin-bottom: 20px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
+.cab-info,
 .cab-info-card {
   margin-bottom: 20px;
   padding: 15px;
   border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s;
+}
+
+.cab-info {
+  border: 1px solid #ddd;
+}
+
+.cab-info-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .cab-info:hover {
   background-color: #f9f9f9;
 }
 
+.cab-title,
+.cab-title-header {
+  margin: 0 0 10px;
+  text-align: center;
+}
+
 .cab-title {
   font-size: 18px;
   font-weight: 600;
-  margin: 0 0 10px;
-  /* add code justify */
   text-align: justify;
-  /* padding-left: 30px;
-  padding-right: 30px; */
 }
 
 .cab-title-header {
   font-size: 20px;
   font-weight: 400;
-  margin: 0 0 10px;
-  text-align: center;
-  /* padding-left: 30px;
-  padding-right: 30px; */
 }
 
-.cab-description {
-  padding-top: 18px;
-  /* font-weight: 200; */
-  font-size: 13px;
-  color: #555;
-  line-height: 1.5;
-  /* add code justify */
-  text-align: justify;
-  /* padding-left: 30px;
-  padding-right: 30px; */
-}
+.cab-description,
 .cab-image-description {
-  padding-top: 11px;
+  padding-top: 10px;
   font-size: 13px;
   color: #555;
-  text-align: left;
   line-height: 1.5;
-
-  /* add code justify */
   text-align: justify;
-  /* padding-left: 30px;
-  padding-right: 30px; */
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
-  .cab-description {
-    padding-top: 10px;
-    /* font-weight: 200; */
-    font-size: 12px;}
-
+  .cab-description,
   .cab-image-description {
-    padding-top: 10px;
-    font-size: 12px;}
-  .cab-title{
+    font-size: 12px;
+  }
+
+  .cab-title {
     font-size: 16px;
     font-weight: 500;
   }
-  .h1 {
-    font-size: 10px;
-  }
+
 }
+
 @media (max-width: 576px) {
   .reverse-image {
     display: flex;
@@ -91,25 +71,26 @@
     flex-direction: column-reverse;
     row-gap: 40px;
   }
+
   .cab-description {
     padding-top: 8px;
-    /* font-weight: 200; */
-    font-size: 12px;}
+    font-size: 12px;
+  }
 
   .cab-image-description {
     padding-top: 8px;
-    font-size: 13px;}
-  .cab-title{
+  }
+
+  .cab-title {
     font-size: 16px;
     font-weight: 500;
   }
+
   .h1 {
     font-size: 10px;
   }
+
   .row {
-    /* display: flex; */
-    /* justify-content: center; */
-    /* flex-direction: column-reverse; */
     row-gap: 40px;
   }
 }

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import QRPayment from "../../assets/Payment/QR payment.jpg";
+import QRPayment from "../../assets/Payment/QR payment.webp";
 
 const Payment = () => {
   const [buttonText, setButtonText] = useState("Card payment Coming Soon");
@@ -118,9 +118,6 @@ const Payment = () => {
 
       
       </Row>
-
-      {/* Additional styles for smaller screens */}
-      
     </Container>
   );
 };
