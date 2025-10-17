@@ -154,7 +154,7 @@ const CabDetails = () => {
             </div>
           </div>
         </div>
-        {/* two div */}
+        {/* two div*/}
 
         <div className="row g-0 text-center align-content-center mb-5">
           <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
