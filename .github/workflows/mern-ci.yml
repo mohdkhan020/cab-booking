@@ -1,0 +1,51 @@
+name: MERN CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x]  # Node version
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      # Node.js setup
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      # Backend (Node/Express) install & test
+      - name: Install Backend Dependencies
+        run: |
+          cd server
+          npm install
+      - name: Run Backend Tests
+        run: |
+          cd server
+          npm test
+
+      # Frontend (React) install & build
+      - name: Install Frontend Dependencies
+        run: |
+          cd client
+          npm install
+      - name: Build Frontend
+        run: |
+          cd client
+          npm run build
+      - name: Run Frontend Tests
+        run: |
+          cd client
+          npm test
