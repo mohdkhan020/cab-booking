@@ -1,0 +1,98 @@
+/* Default link styling */
+.nav-link {
+    color: white; /* Inactive links have white text */
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent; /* No underline when inactive */
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+  }
+  
+  
+  .nav-link {
+    border-bottom: none; /* #ffb606 underline when nav */
+    width: max-content;
+    position: relative; /* Ensure proper positioning for the underline */
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid #cdbe99; /* Underline color on hover */
+}
+
+/* Optional: You can also add a transition for a smooth effect */
+.nav-link,
+.nav-link:hover {
+    transition: border-bottom 0.3s ease; /* Smooth transition effect */
+}
+
+  .active-link {
+    border-bottom: 2px solid #ffb606;; /* #ffb606 underline when active */
+    width: max-content;
+    position: relative; /* Ensure proper positioning for the underline */
+}
+
+/* Optional: You can also add a transition for a smooth effect */
+.active-link,
+.active-link:hover {
+    transition: border-bottom 0.3s ease; /* Smooth transition effect */
+}
+
+
+
+  /* Home link will always have #ffb606 text color */
+  .home-active {
+    color: #ffb606;
+  }
+  
+  /* Other links will stay white but still get the underline on active */
+  .active-link:not(.home-active) {
+    color: white; /* Keeps the text color white for other active links */
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: inherit !important; /* This will ensure the color is taken from your custom styles */
+  }
+  
+  .navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Example with light blue shadow */
+}
+
+
+
+
+.cabLogo {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  
+  /* For small devices like mobile phones */
+  @media (max-width: 576px) {
+    .cabLogo {
+      height: 35px; /* Adjust logo size for mobile */
+    }
+    .navbar-toggler-icon{
+      padding: 9px !important;
+      border: 7px solid white !important;
+      border-radius: 4px !important;
+    }
+    .btn{
+      font-size: .8rem !important;
+      padding: .32rem .7rem !important;
+    }
+  }
+  
+  /* For medium devices like tablets */
+  @media (min-width: 577px) and (max-width: 991px) {
+    .cabLogo {
+      height: 50px; /* Adjust logo size for tablets */
+    }
+  }
+  
+  /* For large devices like laptops and desktops */
+  @media (min-width: 992px) {
+    .cabLogo {
+      height: 60px; /* Adjust logo size for laptops/desktops */
+    }
+  }
+  
