@@ -4,9 +4,11 @@ on:
   push:
     branches:
       - main
+        - testing
   pull_request:
     branches:
       - main
+        - testing
 
 jobs:
   build:
@@ -14,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [18.x]  # Node version
+        node-version: [18.x] # Node version
 
     steps:
       - name: Checkout repo
