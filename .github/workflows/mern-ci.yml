@@ -38,6 +38,10 @@ jobs:
       #     cd server
       #     npm test
 
+      # 👇 Yahi step add karna hai
+      - name: List repo files
+        run: ls -R
+
       # Frontend (React) install & build
       - name: Install Frontend Dependencies
         run: |
