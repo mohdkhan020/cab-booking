@@ -41,7 +41,7 @@ jobs:
       # Frontend (React) install & build
       - name: Install Frontend Dependencies
         run: |
-          cd client
+          cd cab-booking
           npm install
       - name: Build Frontend
         run: |
