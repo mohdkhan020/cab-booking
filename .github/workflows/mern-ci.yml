@@ -45,7 +45,7 @@ jobs:
       # Frontend (React) install & build
       - name: Install Frontend Dependencies
         run: |
-          npm install
+          npm install --legacy-peer-deps
       - name: Build Frontend
         run: |
           npm run build
