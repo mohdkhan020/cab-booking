@@ -48,7 +48,7 @@ jobs:
           npm install --legacy-peer-deps
       - name: Build Frontend
         run: |
-          npm run build
+          npm run build --legacy-peer-deps
       - name: Run Frontend Tests
         run: |
           npm test
