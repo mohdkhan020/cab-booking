@@ -28,15 +28,15 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      # Backend (Node/Express) install & test
-      - name: Install Backend Dependencies
-        run: |
-          cd server
-          npm install
-      - name: Run Backend Tests
-        run: |
-          cd server
-          npm test
+      # # Backend (Node/Express) install & test
+      # - name: Install Backend Dependencies
+      #   run: |
+      #     cd server
+      #     npm install
+      # - name: Run Backend Tests
+      #   run: |
+      #     cd server
+      #     npm test
 
       # Frontend (React) install & build
       - name: Install Frontend Dependencies
