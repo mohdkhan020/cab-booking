@@ -1,0 +1,112 @@
+/* HeroSlider.css */
+.hero-slider {
+  max-width: 100%;
+  height: auto;
+}
+
+.heroImageMargin {
+  margin-top: 68px;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 100vh; /* Full height on larger screens */
+}
+
+.custom-caption-left {
+  position: absolute;
+  /* bottom: 10px; */
+  /* left: 10px; */
+  text-align: center;
+}
+
+/* whatsapp */
+.btn-whatsapp-pulse {
+  background: #25d366;
+  z-index: 9999;
+  color: white;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0;
+  height: 0;
+  padding: 25px;
+  text-decoration: none;
+  border-radius: 50%;
+  animation-name: pulse;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+
+/* Call Pulse */
+.btn-call-pulse {
+  background: #25d366; /* Adjusted color for call */
+  z-index: 9999;
+  color: white;
+  position: fixed;
+  bottom: 20px; /* Below WhatsApp button */
+  left: 20px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0;
+  height: 0;
+  padding: 25px;
+  text-decoration: none;
+  border-radius: 50%;
+  animation: pulse 1.5s ease-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+/* For small devices like mobile phones */
+@media (max-width: 576px) {
+  .carousel-item img {
+    height: 35vh; /* Adjust height for mobile screens */
+    object-fit: cover; /* Ensure the image scales correctly */
+  }
+  .heroImageMargin {
+    margin-top: 67px;
+  }
+}
+
+/* For medium devices like tablets */
+@media (min-width: 577px) and (max-width: 991px) {
+  .carousel-item img {
+    height: 60vh; /* Adjust height for tablet screens */
+    object-fit: cover; /* Ensure the image scales correctly */
+  }
+  .heroImageMargin {
+    margin-top: 68px;
+  }
+}
+
+/* For large devices like laptops and desktops */
+@media (min-width: 992px) {
+  .carousel-item img {
+    height: 85vh; /* Adjust height for desktop screens */
+    object-fit: cover; /* Ensure the image scales correctly */
+  }
+  .heroImageMargin {
+    margin-top: 68px;
+  }
+}

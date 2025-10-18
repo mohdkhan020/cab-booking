@@ -1,0 +1,54 @@
+name: MERN CI
+
+on:
+  push:
+    branches:
+      - main
+      - testing
+  pull_request:
+    branches:
+      - main
+      - testing
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x] # Node version
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      # Node.js setup
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      # # Backend (Node/Express) install & test
+      # - name: Install Backend Dependencies
+      #   run: |
+      #     cd server
+      #     npm install
+      # - name: Run Backend Tests
+      #   run: |
+      #     cd server
+      #     npm test
+
+      # 👇 Yahi step add karna hai
+      - name: List repo files
+        run: ls -R
+
+      # Frontend (React) install & build
+      - name: Install Frontend Dependencies
+        run: |
+          npm install --legacy-peer-deps
+      - name: Build Frontend
+        run: |
+          npm run build --legacy-peer-deps
+      - name: Run Frontend Tests
+        run: |
+          npm test

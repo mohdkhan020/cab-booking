@@ -1,0 +1,23 @@
+/* * {
+    transition: all 0.3s ease-in-out;
+  } */
+  
+  .bg-white-gradient {
+      background: linear-gradient(to bottom, rgb(255, 255, 255) 60%, rgba(255, 255, 255, 0));
+  }
+  
+  /* bootstrap overwrites */
+  .accordion-button {
+    /*accordion button that is active*/
+    font-weight: bold;
+    background: transparent !important;
+    border-bottom: 1px solid;
+  }
+  .accordion-button.collapsed {
+    /*accordion button that is not active*/
+    font-weight: semibold;
+    color: #555;
+  }
+  .accordion-body {
+    background: #f7f7f7;
+  }
